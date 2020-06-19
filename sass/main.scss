@@ -1,0 +1,38 @@
+// Переменные Палитра цветов макета и функция времени
+@import "./utils/variables";
+
+// Общие стили
+@import "./common";
+
+// Плейсхолдеры
+@import "./utils/placeholders";
+
+// Оформление логотипа
+@import "./components/logo";
+
+// Оформление шапки страницы
+@import "./components/page-header";
+
+// Оформление героя
+@import "./components/hero";
+
+// Оформление секции Преимущества
+@import "./components/feature";
+
+// Оформление секции Чем мы занимаемся
+@import "./components/service";
+
+// Оформление секции Наша команда
+@import "./components/team";
+
+// Оформление секции Постоянные клиенты
+@import "./components/customers";
+
+// Оформление футера
+@import "./components/page-footer";
+
+// Оформление модального окна
+@import "./components/data-modal";
+
+// Оформление Портфолио
+@import "./components/portfolio";

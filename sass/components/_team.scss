@@ -1,0 +1,84 @@
+// Наша команда
+.team {
+    @extend %section;
+
+    background-color: $bg-color;
+}
+
+.block-team {
+    @extend %container;
+}
+
+.team-title {
+    @extend %section-title;
+}
+
+.team-list {
+    @extend %list;
+
+    display: flex;
+    margin-top: 50px;
+
+    text-align: center;
+
+    .item {
+    padding-bottom: 24px;
+
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    overflow: hidden;
+    }
+
+    .item:not(:first-child) {
+    margin-left: 30px;
+    }
+}
+
+.team-name {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.specialty {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.network {
+    @extend %list;
+    @extend %centeredFlex;
+    margin-top: 16px;
+
+    .network-item:not(:first-child) {
+    margin-left: 10px;
+    }
+}
+
+.network-link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;    
+    padding: 12px;
+    border-radius: 50%;
+
+    color: $color-svg;
+    fill: currentColor;
+
+    transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+    }
+}
