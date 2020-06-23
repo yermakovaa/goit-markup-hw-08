@@ -13,51 +13,56 @@
     <!-- Шапка страницы -->
    <header class="page-header">
        <!-- Главная навигация -->
-       <div class="block-header">
+       <div class="header-container">
             <nav class="site-nav">
                 <!-- Логотип компании -->
                 <a href="./index.html" class="logo"><span class="logo-web">Web</span> Studio</a>
                 <!-- Ссылки на другие страницы -->
-                <ul class="site-nav-list">
-                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="#" class="link">Контакты</a></li>
-                </ul>
-            </nav>
-        <!-- Контактные данные -->
-            <address class="auth-contacts">
-                <ul class="auth-contacts-list">
-                    <li class="item">                        
-                        <a href="mailto:info@devstudio.com" class="auth-contacts-link">
-                            <svg class="auth-contacts-icon" width="16" height="11">
-                                <use href="./img/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">        
-                        <a href="tel:+380961111111" class="auth-contacts-link">
-                            <svg class="auth-contacts-icon" width="10" height="15">
-                                <use href="./img/sprite.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </address>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                    <svg class="icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./img/sprite.svg#icon-cross"></use> 
+                        <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <!-- <div class="menu-container" id="menu-container" data-menu> -->
+                    <ul class="site-nav-list">
+                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                        <li class="item"><a href="#" class="link">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-contacts-list">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="auth-contacts-link">
+                                <svg class="auth-contacts-icon" width="16" height="11">
+                                    <use href="./img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="tel:+380961111111" class="auth-contacts-link">
+                                <svg class="auth-contacts-icon" width="10" height="15">
+                                    <use href="./img/sprite.svg#icon-tel"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </nav>        
         </div>
    </header>
    <main>
    <!-- Заголовок -->
         <section class="hero">
-            <div class="block-hero">
+            <div class="hero-container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="hero-button" data-modal-open>Заказать услугу</button>                
             </div>
         </section>
         <!-- Преимущества -->
         <section class="feature">
-            <div class="block-feature">
+            <div class="feature-container">
                 <h2 class="feature-title">Преимущества</h2>
                 <ul class="feature-list">
                     <li class="item">
@@ -104,7 +109,7 @@
         </section>
         <!-- Чем мы занимаемся -->
         <section class="service">
-            <div class="block-service">
+            <div class="service-container">
                 <h2 class="service-title">Чем мы занимаемся</h2>
                 <ul class="service-list">
                     <li class="item">
@@ -124,7 +129,7 @@
         </section>
         <!-- Наша команда -->
         <section class="team">
-            <div class="block-team">
+            <div class="team-container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul lang="en" class="team-list">
                     <li class="item">
@@ -272,7 +277,7 @@
         </section>
         <!-- Постоянные клиенты -->
         <section class="customers">
-            <div class="block-customers">
+            <div class="customers-container">
                 <h2 class="customers-title">Постоянные клиенты</h2>
                 <ul class="clients">
                     <li class="item">
@@ -323,7 +328,7 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-        <div class="block-footer">
+        <div class="footer-container">
             <div class="flex-container">
                 <div class="contacts">
                     <a href="./index.html" class="footer-logo"><span class="logo-web">Web</span> Studio</a>
@@ -436,17 +441,8 @@
         </div>
     </div>
     <!-- Скрипты -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script>
-        (() => {
-                document.querySelectorAll('.js-speaker-form').forEach(El => {
-                    El.addEventListener('submit', e => {
-                        e.preventDefault();
-                        new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-                        e.currentTarget.reset();
-                    });
-                });
-            })();
-    </script>
+    <script src="./js/form.js"></script>
 </body>
 </html>

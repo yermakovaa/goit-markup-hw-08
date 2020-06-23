@@ -1,5 +1,11 @@
-<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+<svg aria-hidden="true" style="position:absolute; width:0; height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
 <defs>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path d="M23.734 10.304l-1.504-1.504-5.963 5.962-5.962-5.962-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
+</symbol>
 <symbol id="icon-mail" viewBox="0 0 47 32">
 <path d="M42.182 0H4.364C1.958 0 0 1.772 0 3.948v23.68c0 2.176 1.958 3.945 4.364 3.945h37.818c2.406 0 4.364-1.769 4.364-3.948V3.945c0-2.17-1.958-3.945-4.364-3.945zm0 2.63c.198 0 .387.038.559.102L23.273 17.993 3.805 2.732c.166-.064.358-.102.558-.102h37.818zm0 26.313H4.364c-.803 0-1.455-.591-1.455-1.318V5.513l19.409 15.215c.276.215.614.32.954.32h.013c.356 0 .684-.12.945-.323l-.004.003L43.635 5.513v22.112c0 .727-.652 1.318-1.455 1.318z"/>
 </symbol>
