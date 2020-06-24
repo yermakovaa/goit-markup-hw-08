@@ -76,7 +76,7 @@ img {
   background-size: cover;
 }
 
-.feature, .service, .team, .customers {
+.feature, .team, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -524,6 +524,10 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.service {
+  padding: 94px 0px;
 }
 
 @media screen and (max-width: 1199px) {
