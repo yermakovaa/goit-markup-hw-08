@@ -5,8 +5,8 @@
 
 // Оформление Портфолио
 .projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .projects-container {
@@ -19,12 +19,21 @@
 
 .filter {
     @extend %list;
-    @extend %centeredFlex;
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .item:nth-child(-n + 3) {
+        margin-bottom: 15px;
+    }
 
     .item:not(:first-child) {
     margin-left: 8px;
     }
+    .item:nth-child(4) {
+        margin: 0;
+    }
+
 }
 
 .filter-button {
@@ -58,20 +67,18 @@
 
 .projects-list {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
 }
 
 .projects-list .item {
-    margin: 15px;
-    width: 370px;
+    width: 450px;
 
     background-color: $primary-white-color;
-    
-    border-radius: 5px;
 
     transition: box-shadow 250ms $timing-function;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
     
     &:hover, &:focus {
             box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -109,7 +116,6 @@
     @extend %centeredFlex;
 
     background-color: rgba(33, 150, 243, 0.9);
-    border-radius: 5px 5px 0px 0px;
 }
 
 .project-text {
@@ -129,8 +135,7 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    
     padding: 20px 24px;
 }
 

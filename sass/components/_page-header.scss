@@ -1,19 +1,6 @@
 // Оформление навигации 
 .header-container {
     @extend %container;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
-
     position: relative;
 }
 
@@ -71,7 +58,9 @@
 
     transition: opacity 250ms $timing-function;
 
-    opacity: 0;    
+    opacity: 0;
+    pointer-events: none;
+    
     border-top: 1px solid #ECECEC;
     background-color: $primary-white-color;
     
@@ -80,6 +69,7 @@
 
 .menu-container.is-open {
     opacity: 1;
+    pointer-events: painted;
 }
 
 .site-nav {

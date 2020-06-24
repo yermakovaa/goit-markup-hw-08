@@ -24,6 +24,18 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 // Флекс
@@ -35,8 +47,6 @@
 
 // Оверлей для Героя
 %overlay {
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(47,48,58,0.8);
@@ -50,8 +60,8 @@
 
 // Оформление секций
 %section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 %section-title {
@@ -59,7 +69,7 @@
     margin-bottom: 0;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
 }

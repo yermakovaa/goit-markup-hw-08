@@ -9,23 +9,26 @@
 
 .customers-title {
     @extend %section-title;
+    margin-bottom: 30px;
 }
 
 .clients {
     @extend %list;
+    @extend %centeredFlex;
+    flex-wrap: wrap;
 
     display: flex;
-    margin-top: 50px;
+    margin: -15px;
 
-    .item:not(:first-child) {
-    margin-left: 30px;
+    .item {
+    margin: 15px;
     }
 }
 
 .clients-link {
     @extend %centeredFlex;
 
-    width: 170px;
+    width: 210px;
     height: 90px;
 
     transition: border 250ms $timing-function,
