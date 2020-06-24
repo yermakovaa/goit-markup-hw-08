@@ -26,18 +26,32 @@
     transition: color 250ms $timing-function,
     opacity 250ms $timing-function;
     
-    .icons {
+    .icon-menu {
         color: $secondary-black-color;
         fill: currentColor;
     }
-}
 
-.menu-button .icon-cross {
-    opacity: 0;
+    .icon-cross {
+        opacity: 0;
+    }
+
+    &:hover .icon-menu, 
+    &:focus .icon-menu {
+        color: $accent-color;
+    }
 }
 
 .menu-button.is-open .icon-cross {
     opacity: 1;
+    color: $primary-text-color;
+    fill: currentColor;
+}
+
+.menu-button.is-open {
+    &:hover .icon-cross, 
+    &:focus .icon-cross {
+        color: $accent-color;
+    }
 }
 
 .menu-button.is-open .icon-menu {
