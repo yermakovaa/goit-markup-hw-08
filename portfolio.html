@@ -20,33 +20,38 @@
                 <!-- Логотип компании -->
                 <a href="./index.html" class="logo"><span class="logo-web">Web</span> Studio</a>
                 <!-- Ссылки на другие страницы -->
-                <ul class="site-nav-list">
-                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="item"><a href="#" class="link">Контакты</a></li>
-                </ul>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                    <svg class="icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./img/sprite.svg#icon-cross"></use>
+                        <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav-list">
+                        <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                        <li class="item"><a href="#" class="link">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-contacts-list">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="auth-contacts-link">
+                                <svg class="auth-contacts-icon" width="16" height="11">
+                                    <use href="./img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="tel:+380961111111" class="auth-contacts-link">
+                                <svg class="auth-contacts-icon" width="10" height="15">
+                                    <use href="./img/sprite.svg#icon-tel"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <!-- Контактные данные -->
-            <address class="auth-contacts">
-                <ul class="auth-contacts-list">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="auth-contacts-link">
-                            <svg class="auth-contacts-icon" width="16" height="11">
-                                <use href="./img/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380961111111" class="auth-contacts-link">
-                            <svg class="auth-contacts-icon" width="10" height="15">
-                                <use href="./img/sprite.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </address>
         </div>
     </header>
     <main>
@@ -303,12 +308,17 @@
     </footer>
     <script>
         (() => {
-                document.querySelectorAll('.js-speaker-form').forEach(El => {
-                    El.addEventListener('submit', e => {
-                        e.preventDefault();
-                        new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-                        e.currentTarget.reset();
-                    });
+                const menuBtnRef = document.querySelector("[data-menu-button]");
+                const mobileMenuRef = document.querySelector("[data-menu]");
+
+                menuBtnRef.addEventListener("click", () => {
+                    const expanded =
+                        menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+                    menuBtnRef.classList.toggle("is-open");
+                    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+                    mobileMenuRef.classList.toggle("is-open");
                 });
             })();
     </script>
