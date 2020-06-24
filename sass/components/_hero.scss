@@ -5,9 +5,10 @@
     text-align: center;
 
     @extend %overlay;
-    height: 400px;
 
-    
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 
 .hero-container {
@@ -24,6 +25,11 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 // Оформление кнопки "Заказать услугу"
