@@ -1,6 +1,11 @@
 // Постоянные клиенты
 .customers {
     @extend %section;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .customers-container {
@@ -10,6 +15,10 @@
 .customers-title {
     @extend %section-title;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .clients {
@@ -43,6 +52,14 @@
     &:hover, &:focus {
     border: 1px solid $accent-color;
     color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 

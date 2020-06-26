@@ -3,6 +3,11 @@
     @extend %section;
 
     background-color: $bg-color;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team-container {
@@ -20,6 +25,16 @@
     margin-top: 30px;
 
     text-align: center;
+
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     // margin: -15px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 
     .item {
     padding-bottom: 24px;
