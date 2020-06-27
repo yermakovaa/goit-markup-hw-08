@@ -1,7 +1,10 @@
 // Оформление навигации 
+.page-header {
+    position: relative;
+}
+
 .header-container {
     @extend %container;
-    position: relative;
 }
 
 .menu-button {
