@@ -45,19 +45,6 @@
     justify-content: center;
 }
 
-// Оверлей для Героя
-%overlay {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(47,48,58,0.8);
-    background-image: 
-        linear-gradient(rgba(47,48,58,0.8), rgba(47,48,58,0.8)),
-        url("../img/bg-hero.jpg");   
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 // Оформление секций
 %section {
     padding-top: 60px;

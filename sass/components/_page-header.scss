@@ -203,6 +203,8 @@
 }
 
 .auth-contacts-link {
+    @extend %centeredFlex;
+
     transition: color 250ms $timing-function;
 
     color: $secondary-text-color;
@@ -232,7 +234,7 @@
 .auth-contacts-icon {
     margin-right: 10px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 8px;
     }
 }
