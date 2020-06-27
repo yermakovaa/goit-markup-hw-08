@@ -361,6 +361,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .auth-contacts-link {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -567,6 +570,11 @@ img {
   }
 }
 
+.service-title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+
 .service-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,8 +588,6 @@ img {
 
 .service-list .item {
   position: relative;
-  border-radius: 4px 4px 4px 4px;
-  overflow: hidden;
 }
 
 .service-text {
