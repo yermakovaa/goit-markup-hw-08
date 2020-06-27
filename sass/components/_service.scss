@@ -30,6 +30,7 @@
 
     .item {
     position: relative;
+    width: calc((100% - 2 * 30px) / 3);
 
     }
 }
