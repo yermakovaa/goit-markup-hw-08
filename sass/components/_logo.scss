@@ -1,19 +1,18 @@
 // Оформление логотипа
 .logo {   
-    text-decoration: none;
-
     color: $primary-text-color;    
     font-family: $font-family-logo;    
     font-weight: 700;
-
     font-size: 24px;
-    line-height: 1.17;    
+    line-height: 1.17;
+    text-decoration: none;    
 
     .logo-web {
     color: $accent-color;
     }
 
     @media screen and (min-width: 1200px) {
+        color: $secondary-black-color;
         font-size: 26px;
         line-height: 1.19;
     }
