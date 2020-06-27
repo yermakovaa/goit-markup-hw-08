@@ -16,6 +16,13 @@
 
 .team-title {
     @extend %section-title;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .team-list {
@@ -26,30 +33,33 @@
 
     text-align: center;
 
+    .item:not(:first-child) {
+        @media screen and (max-width: 767px) {
+            margin-top: 30px;
+        }        
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        // margin: -15px;
+        margin: -15px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-top: 50px;
     }
 
-    .item:not(:last-child) {
-        // margin-bottom: 30px;
-    }
+    
 }
 
 .team-list .item {
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 2 * 30px) / 2);
-            // margin: 15px;
+            margin: 15px;
         }    
 
         @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 4 * 30px) / 4);
-            // margin: 15px;
         } 
 
         padding-bottom: 24px;
