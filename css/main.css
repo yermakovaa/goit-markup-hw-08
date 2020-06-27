@@ -284,7 +284,8 @@ img {
   .site-nav-list .link {
     font-size: 14px;
     line-height: 1.14;
-    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
