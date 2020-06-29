@@ -522,16 +522,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .feature-list .item {
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature-list .item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
-        flex-basis: calc((100% - 4 * 30px) / 4);
+    width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
@@ -669,16 +667,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .team-list .item {
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-list .item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
-        flex-basis: calc((100% - 4 * 30px) / 4);
+    width: calc((100% - 4 * 30px) / 4);
   }
 }
 
@@ -1342,16 +1338,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .projects-list .item {
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list .item {
-    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
-        flex-basis: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
@@ -1414,6 +1408,9 @@ img {
 .name-project {
   margin-top: 0;
   margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #212121;
   font-weight: 700;
   font-size: 18px;
