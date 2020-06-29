@@ -101,12 +101,12 @@
     }
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 2 * 30px) / 2);
+        width: calc((100% - 2 * 30px) / 2);
         margin: 15px;
     }    
 
     @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 3 * 30px) / 3);
+        width: calc((100% - 3 * 30px) / 3);
         margin: 15px;
     }
     
@@ -172,6 +172,10 @@
 .name-project {
     margin-top: 0;
     margin-bottom: 4px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     color: $primary-text-color;
     font-weight: 700;
