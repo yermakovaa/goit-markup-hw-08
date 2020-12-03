@@ -1,81 +1,81 @@
 // Преимущества
 .feature {
-    @extend %section;
+  @extend %section;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 0;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .feature-container {
-    @extend %container;
+  @extend %container;
 }
 
 .feature-list-title {
-    @media screen and (max-width: 767px) {
-        text-align: center;
-    }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature-title {
-    @extend %visually-hidden;
+  @extend %visually-hidden;
 }
 
 .feature-list {
-    @extend %list;
+  @extend %list;
 
-    .item:not(:first-child) {
-        @media screen and (max-width: 767px) {
-            margin-top: 30px;
-        }        
+  .item:not(:first-child) {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .feature-list .item {
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;
-    }    
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 4 * 30px) / 4);
-        margin: 15px;
-    } 
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
 }
 
 .feature-image {
-    @extend %centeredFlex;
+  @extend %centeredFlex;
 
-    height: 120px;
-    width: 100%;
+  height: 120px;
+  width: 100%;
 
-    background-color: $bg-color;
-    border-radius: 4px;
+  background-color: $bg-color;
+  border-radius: 4px;
 }
 
 .feature-list-title {
-    margin-top: 30px;
-    margin-bottom: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .feature-list-text {
-    margin-top: 10px;
-    margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
 
-    color: $secondary-text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  color: $secondary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }

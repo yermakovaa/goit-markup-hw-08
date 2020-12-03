@@ -1,73 +1,72 @@
 // Оформление модального окна
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    opacity: 1;
-    transition: opacity 250ms $timing-function,
-    visibility 250ms $timing-function;
+  opacity: 1;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .data-modal {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    transition: transform 250ms $timing-function;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  transition: transform 250ms $timing-function;
 
-    max-width: 450px;
+  max-width: 450px;
+  width: 100%;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background-color: $primary-white-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  @media (min-width: 1200px) {
+    max-width: 528px;
     width: 100%;
-
-    padding: 40px;
-
-    text-align: center;
-
-    background-color: $primary-white-color;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-
-    @media (min-width: 1200px) {
-        max-width: 528px;
-        width: 100%;
-    }
-    
+  }
 }
 
 .is-hidden .data-modal {
-    transform: translateX(-50%) scale(0.8);
+  transform: translateX(-50%) scale(0.8);
 }
 
 .modal-title {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 30px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
 
-    color: $primary-text-color;
+  color: $primary-text-color;
 }
 
 .modal-form {
-    position: relative;
-    margin-bottom: 28px;
+  position: relative;
+  margin-bottom: 28px;
 
-    & label {
+  & label {
     position: absolute;
     top: 50%;
     left: 42px;
@@ -77,57 +76,57 @@
 
     letter-spacing: 0.01em;
     color: $secondary-text-color;
-    }
+  }
 }
 
 .icon-input {
-    position: absolute;
-    top: 50%;
-    left: 16px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
 
-    transform: translateY(-50%);
-    transition: color 250ms $timing-function;
+  transform: translateY(-50%);
+  transition: color 250ms $timing-function;
 
-
-    display: block;
-    color: $primary-text-color;
-    fill: currentColor;
+  display: block;
+  color: $primary-text-color;
+  fill: currentColor;
 }
 
 .modal-form input {
-    width: 100%;
-    padding: 12px 16px;
-    padding-left: 42px;
+  width: 100%;
+  padding: 12px 16px;
+  padding-left: 42px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
 
-    &:focus {
+  &:focus {
     outline-color: $accent-color;
-    }
+  }
 
-    &:focus + label {
+  &:focus + label {
     color: $accent-color;
-    }
+  }
 
-    &:focus + label, &:not(:placeholder-shown) + label {
-        font-size: 12px;
-        line-height: 1.17;
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    font-size: 12px;
+    line-height: 1.17;
 
-        transform: translate(-26px, -36px);
-    }
+    transform: translate(-26px, -36px);
+  }
 
-    &:focus ~ .icon-input {
+  &:focus ~ .icon-input {
     color: $accent-color;
-    }
+  }
 }
 
 .modal-comment {
-    position: relative;
-    margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 
-    & label {
+  & label {
     position: absolute;
     top: 12px;
     left: 16px;
@@ -136,65 +135,66 @@
 
     letter-spacing: 0.01em;
     color: $secondary-text-color;
-    }
+  }
 }
 
 .modal-comment textarea {
-    height: 120px;
-    width: 100%;
-    padding: 12px 16px;
-    resize: none;
+  height: 120px;
+  width: 100%;
+  padding: 12px 16px;
+  resize: none;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
 
-    &:focus + label, &:not(:placeholder-shown) + label {
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
     font-size: 12px;
     line-height: 1.17;
-    
+
     transform: translateY(-28px);
-    }
+  }
 
-    &:focus + label {
+  &:focus + label {
     color: $accent-color;
-    }
+  }
 
-    &:focus {
+  &:focus {
     outline-color: $accent-color;
-    }
+  }
 }
 
 .icon-check {
-    display: inline-block;
-    margin-right: 8px;
-    
-    width: 16px;
-    height: 15px;
-    
-    cursor: pointer;
-    border: 2px solid $primary-text-color;
-    border-radius: 2px;
-    
-    transition: all 250ms $timing-function;
+  display: inline-block;
+  margin-right: 8px;
+
+  width: 16px;
+  height: 15px;
+
+  cursor: pointer;
+  border: 2px solid $primary-text-color;
+  border-radius: 2px;
+
+  transition: all 250ms $timing-function;
 }
 
 .checkbox {
-    @extend %visually-hidden;
+  @extend %visually-hidden;
 
-    &:checked + .icon-check {
+  &:checked + .icon-check {
     border-color: transparent;
-    background-color: $accent-color;    
+    background-color: $accent-color;
     background-image: url('../img/icon-check.svg');
     background-size: contain;
     background-origin: border-box;
-    }
+  }
 }
 
 .modal-policy {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    & label {
+  & label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,59 +205,60 @@
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
-    }
+  }
 }
 
 .link-policy {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .button-send {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 
-    width: 200px;
-    height: 50px;
-    padding: 0;
-    border: none;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: none;
 
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-    color: $primary-white-color;
+  color: $primary-white-color;
 }
 
 .icon-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    
-    @extend %centeredFlex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    width: 30px;
-    height: 30px;
+  @extend %centeredFlex;
 
-    margin: 0;
-    padding: 0;
-    background: $primary-white-color;
-    border-radius: 50%;    
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
 
-    fill: currentColor;
-    color: $secondary-black-color;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background: $primary-white-color;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
-    transition: color 250ms $timing-function;
+  fill: currentColor;
+  color: $secondary-black-color;
+  cursor: pointer;
 
-    &:hover, &:focus {
-        color: $accent-color;
-    }
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

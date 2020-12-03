@@ -1,57 +1,56 @@
 // Чем мы занимаемся
 .service {
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-    padding: 94px 0px;
+  padding: 94px 0px;
 }
 
 .service-container {
-    @extend %container;
+  @extend %container;
 }
 
 .service-title {
-    @extend %section-title;
+  @extend %section-title;
 
-    font-size: 36px;
-    line-height: 1.17;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
 .service-list {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 
-    @extend %list;
+  @extend %list;
 
-    .item:not(:first-child) {
+  .item:not(:first-child) {
     margin-left: 30px;
-    }
+  }
 
-    .item {
+  .item {
     position: relative;
     width: calc((100% - 2 * 30px) / 3);
-
-    }
+  }
 }
 
 .service-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
 
-    color: $primary-white-color;
-    background: rgba(47, 48, 58, 0.8);
+  color: $primary-white-color;
+  background: rgba(47, 48, 58, 0.8);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
 }

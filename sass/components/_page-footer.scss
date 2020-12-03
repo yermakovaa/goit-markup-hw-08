@@ -1,130 +1,128 @@
 // Оформление футера
 .page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    background-color: $bg-color-footer;
+  background-color: $bg-color-footer;
 }
 
 .footer-container {
-    @extend %container;
-    
+  @extend %container;
 
-    @media screen and (max-width: 1199px) {
-        text-align: center;
-    }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: baseline;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-    }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .contacts {
-    @media screen and (min-width: 1200px) {
-        margin-right: 69px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+  }
 }
 
 .address-container {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    color: $primary-white-color;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  color: $primary-white-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 
-    .link {
+  .link {
     display: block;
     margin-top: 8px;
 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    }
+  }
 }
 
 .join-container {
-    margin-top: 60px;
+  margin-top: 60px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-right: 94px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+  }
 }
 
 .call {
-    display: block;
+  display: block;
 
-    color: $primary-white-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .socials {
-    @extend %centeredFlex;
-    @extend %list;
+  @extend %centeredFlex;
+  @extend %list;
 
-    margin-top: 20px;
+  margin-top: 20px;
 
-    .item:not(:first-child) {
+  .item:not(:first-child) {
     margin-left: 10px;
-    }
+  }
 }
 
 .social-links-footer {
-    @extend %centeredFlex;
+  @extend %centeredFlex;
 
-    height: 44px;
-    width: 44px;
+  height: 44px;
+  width: 44px;
 
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $primary-white-color; 
-    fill: currentColor;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-white-color;
+  fill: currentColor;
 
-    transition: background-color 250ms $timing-function;
+  transition: background-color 250ms $timing-function;
 
-    &:hover, &focus {
-        background-color: $accent-color;
-    }
+  &:hover,
+  &focus {
+    background-color: $accent-color;
+  }
 }
 
 .subscription {
-    margin-top: 60px;
+  margin-top: 60px;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 0;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .form {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form-field {
-    & input {
-
+  & input {
     padding: 15px 16px;
     width: 100%;
     height: 50px;
@@ -140,55 +138,53 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
 
-
-        &::placeholder {
-            color: currentColor;            
-        }
-    
+    &::placeholder {
+      color: currentColor;
     }
+  }
 }
 
 .form-field input {
-    @media screen and (min-width: 768px) {
-        width: 450px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        margin-right: 12px;
-        width: 358px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .form-button {
-    @extend %centeredFlex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+  @extend %centeredFlex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 
-    padding: 0;
+  padding: 0;
 
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 
-    border: none;
+  border: none;
 
-    cursor: pointer;
-    background-color: $accent-color;
+  cursor: pointer;
+  background-color: $accent-color;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    color: $primary-white-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 0;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .form-subscription {
-    margin-right: 10px;
+  margin-right: 10px;
 }

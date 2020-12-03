@@ -1,9 +1,9 @@
 // Обнуление стилей для списков
 %list {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 // Скрытие элементов
@@ -20,43 +20,43 @@
 
 // Контейнер для центрирования контента
 %container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 // Флекс
 %centeredFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // Оформление секций
 %section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 %section-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
 }

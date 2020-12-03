@@ -1,37 +1,37 @@
 // Оформление логотипа
-.logo {   
-    color: $primary-text-color;    
-    font-family: $font-family-logo;    
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    text-decoration: none;    
+.logo {
+  color: $primary-text-color;
+  font-family: $font-family-logo;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
 
-    .logo-web {
+  .logo-web {
     color: $accent-color;
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
-        color: $secondary-black-color;
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  @media screen and (min-width: 1200px) {
+    color: $secondary-black-color;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-logo {
-    color: $primary-white-color;
-    font-family: $font-family-logo;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    text-decoration: none;
+  color: $primary-white-color;
+  font-family: $font-family-logo;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
 
-    .logo-web {
+  .logo-web {
     color: $accent-color;
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
